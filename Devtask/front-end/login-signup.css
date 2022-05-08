@@ -1,0 +1,125 @@
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-repeat: no-repeat;
+    background-image: url('./img/design1.png');
+  }
+
+  .login ,.signup {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 75%;
+    width: 50%;
+  }
+  .title {
+    font-size: 2.2rem;
+    color: black;
+    margin-bottom: 10px;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0rem 5rem;
+  }
+ 
+.btn{
+    border: inset 4px rgba(2, 27, 247, 0.6);
+    width: 150px;
+    margin: 1%;
+    height: 49px;
+    border-radius: 55px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:hover{
+    box-shadow: 2px 5px 10px 1px rgb(2 26 247 / 35%);
+    border: inset 8px rgba(2, 27, 247, 0.6);
+
+}
+.transparent{
+  border: solid 4px white !important;
+  color: white !important;
+  background-color: transparent !important;
+}
+.transparent:hover{
+  border: solid 8px white !important;
+}
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+    border: 0.5px solid grey;
+  }
+.input-field:hover{
+  box-shadow: 2px 5px 15px -1px #021af759;
+  border-bottom: 2px solid #021bf799
+}
+  .input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: #333;
+    font-size: 1.1rem;
+  }
+  
+  .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+  
+  .panels-container { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .panel {
+    pointer-events: all;
+    padding: 3rem 17% 2rem 12%;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* media query */
+
+  @media (max-width: 870px) {
+  .panels-container {
+      grid-template-columns: repeat(1, 1fr);
+  }
+    .login ,.signup{
+      transform: none;
+      margin: auto;   
+      position: unset;
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 870px) {
+    form {
+      padding: 0rem 1rem;
+    }
+    
+    }
+  

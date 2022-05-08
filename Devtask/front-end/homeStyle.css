@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient( to top, rgb(218, 213, 213),rgb(250, 249, 246));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.myBtn{
+    border: inset 4px #467ddf;
+    width: 150px;
+    margin: 1%;
+    height: 49px;
+    border-radius: 55px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.myBtn:hover{
+    box-shadow: 2px 5px 10px 1px rgb(2 26 247 / 35%);
+    border: inset 8px #467ddf;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  margin-right: 0.6rem;
+  margin-top: -0.5rem;
+}
+
+.logo h3 {
+  color: white;
+  font-size: 1.55rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.headings{
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  width: fit-content;
+  padding: 10px;
+  margin: 20px 5px 5px 5px;
+  border-radius: 10px;
+  background-color: #27339d;
+}
+div.project{
+  width: 50%;
+  padding: 5px;
+  margin: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #ffffff;
+  border: 2px solid rgb(161, 161, 161);
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+@media screen and (max-width: 1200px) {
+  div.project{
+    width: 70%;
+  }
+}
+@media screen and (max-width: 875px) {
+  div.project{
+    width: 80%;
+  }
+}
+/* model styling >>>> start >>>> */
+
+.modal-title{
+  color: #467ddf;
+}
+label{
+  display: block;
+  font-weight: bold;
+  float: left;
+  margin-left: 2%;
+}
+input{
+  padding: 5px;
+}
+#projectName,#key,#projectKey{
+  width: 95%;
+  margin: 2%;
+  height: 45px;
+  box-shadow: 0px 0px 10px 0px  rgb(192, 193, 204);
+  border: none;
+  border-bottom: solid 4px #467ddf;
+  outline: none;
+}
+#users{
+  width: 80%;
+  margin: 2%;
+  height: 45px;
+  box-shadow: 0px 0px 10px 0px  rgb(192, 193, 204);
+  border: none;
+  border-bottom: solid 4px #467ddf;
+  outline: none;
+}
+@media screen and (max-width: 475px) {
+  #users {
+   width: 70%;
+  }
+  div.project{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 310px) {
+  #users {
+   width: 65%;
+  }
+}
+
+#projectName:hover,#projectKey:hover,#key:hover,#users:hover{
+  border: none;
+  border-bottom: solid 4px rgb(0, 0, 0);
+  
+}
+
+.btn{
+  border-bottom: solid 4px !important;
+}
+
+.btn:hover{
+  box-shadow: 0px 0px 25px 3px  rgba(146, 146, 148, 0.747) !important;
+}
+/* model styling <<<< end <<<< */
+
+.team{
+  width: 65%;
+  padding: 5px;
+  margin: 10px auto 10px auto ;
+  background-color: rgb(204, 209, 255, 0.38);
+  border-left: solid 8px #467ddf;
+  text-align: left;
+}
+.team:hover{
+  box-shadow: 0px 0px 10px 1px #467ddf;
+}
+
